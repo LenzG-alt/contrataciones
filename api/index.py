@@ -116,6 +116,7 @@ app.add_middleware(
 
 os.makedirs("static/reports", exist_ok=True)
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/public", StaticFiles(directory="public"), name="public")
 
 # =============================================================================
 # 3. CACHÉ PARA GRAFOS
