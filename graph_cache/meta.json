@@ -1,0 +1,15 @@
+{
+  "computed_at": "2026-07-05T19:10:18.106275+00:00",
+  "n_contracts_source": 60872,
+  "n_nodes": 36465,
+  "n_edges": 48447,
+  "n_communities": 541,
+  "grid_bounds": {
+    "xmin": -144.94688415527344,
+    "xmax": 96.62786865234375,
+    "ymin": -171.6199493408203,
+    "ymax": 151.58758544921875,
+    "grid_size": 48
+  },
+  "layout_engine": "igraph"
+}

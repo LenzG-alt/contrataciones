@@ -1,0 +1,53 @@
+# Entorno virtual
+.venv/
+venv/
+ENV/
+
+dashboard/
+start_dashboard.py
+hola.ipynb
+pca_scores.parquet
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Variables de entorno
+.env
+
+# Datos generados / pesados (ajusta según tu caso)
+data/
+*.csv
+
+# Modelos o outputs pesados (si aplica)
+*.pkl
+*.joblib
+
+# IDEs
+.vscode/
+.idea/
+
+# Streamlit / dashboards (si generan cache)
+.streamlit/
+
+# Node (por tu frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Python packaging
+dist/
+build/
+*.egg-info/
