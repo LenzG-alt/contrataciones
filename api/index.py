@@ -49,6 +49,7 @@ from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
+from fastapi.responses import FileResponse
 
 from graph_engine import GraphEngine
 
@@ -793,6 +794,9 @@ async def export_report(body: ReportRequest):
 
     return {"message": "PDF generado", "url": f"/static/{filename}"}
 
+@app.get("/")
+async def home():
+    return FileResponse("public/index.html")
 
 # =============================================================================
 # 9. EJECUTAR SERVIDOR
